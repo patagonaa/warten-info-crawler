@@ -1,0 +1,34 @@
+{
+  "name": "warten-info-crawler",
+  "version": "1.0.0",
+  "description": "warten.info waiting times crawler",
+  "main": "index.js",
+  "scripts": {
+    "test": "ts-mocha src/**/*.spec.ts",
+    "build": "tsc",
+    "run": "npm run build && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patagonaa/warten-info-crawler.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/patagonaa/warten-info-crawler/issues"
+  },
+  "homepage": "https://github.com/patagonaa/warten-info-crawler#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.7",
+    "@types/mocha": "^5.2.7",
+    "@types/node-fetch": "^2.5.4",
+    "chai": "^4.2.0",
+    "mocha": "^7.0.0",
+    "ts-mocha": "^6.0.0",
+    "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "@types/node": "^13.1.4",
+    "node-fetch": "^2.6.0"
+  }
+}
