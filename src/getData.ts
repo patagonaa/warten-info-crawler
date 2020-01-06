@@ -75,9 +75,8 @@ export class DataProvider {
                     }
                     break;
                 }
-                break;
             default:
-                throw 'Invalid Data Type'; 1
+                throw 'Invalid Data Type';
         }
 
         return waitCircleData;
