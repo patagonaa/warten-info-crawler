@@ -199,7 +199,7 @@ const sites: Site[] = [
         name: 'kfz-zulassungsstelle-lk-cuxhaven-cuxhaven',
         displayName: 'Landkreis Cuxhaven - KFZ-Zulassungsstelle Cuxhaven',
         url: 'https://warten.info/lk-cuxhaven-zul/get.php?option=values',
-        dataType: DataType.JsonObject
+        dataType: DataType.MinusSignSeperated
     }
 ];
 
