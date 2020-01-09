@@ -11,7 +11,8 @@ export function convertData(measurementName: string, site: Site, siteData: WaitC
         };
         let values = {
             visitorCount: circleData.visitorCount,
-            waitTimeSeconds: circleData.waitTimeSeconds,
+            waitTimeSecondsRaw: circleData.waitTimeSeconds,
+            waitTimeSeconds: circleData.visitorCount > 0 ? circleData.waitTimeSeconds : null,
             nextCallCount: circleData.nextCalls == null ? null : circleData.nextCalls.length
         };
 
