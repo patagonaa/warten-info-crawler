@@ -58,6 +58,12 @@ const sites: Site[] = [
         dataType: DataType.JsonObject
     },
     {
+        name: 'ele-bottrop',
+        displayName: 'ELE-Center Bottrop',
+        url: 'https://warten.info/ele-bo/get.php?option=values',
+        dataType: DataType.JsonObject
+    },
+    {
         name: 'kfz-zul-ammerland',
         displayName: 'KFZ-Zulassungsstelle Landkreis Ammerland',
         url: 'https://warten.info/lk-ammerland-zul/get.php?option=values',
@@ -157,6 +163,42 @@ const sites: Site[] = [
         name: 'buergerbuero-juelich',
         displayName: 'Bürgerbüro Stadt Jülich',
         url: 'https://napp.kdvz-frechen.de/module/juelich/wartezeit/get.php?option=values',
+        dataType: DataType.JsonObject
+    },
+    {
+        name: 'buergerbuero-wuerzburg',
+        displayName: 'Bürgerbüro Stadt Würzburg',
+        url: 'https://warten.info/wuerzburg/get.php?option=values',
+        dataType: DataType.JsonObject
+    },
+    {
+        name: 'kfz-zulassungsstelle-viersen',
+        displayName: 'KFZ-Zulassungsstelle Viersen',
+        url: 'https://warten.info/kreis-viersen/get.php?option=values',
+        dataType: DataType.JsonObject
+    },
+    {
+        name: 'landratsamt-fuerstenfeldbruck',
+        displayName: 'Landratsamt Fürstenfeldbruck',
+        url: 'https://warten.info/lra-fuerstenfeldbruck/get.php?option=values',
+        dataType: DataType.JsonObject
+    },
+    {
+        name: 'kfz-zulassungsstelle-lk-vechta-vechta',
+        displayName: 'Landkreis Vechta - KFZ-Zulassungsstelle Vechta',
+        url: 'https://warten.info/lkvechta-zul-vechta/get.php?option=values',
+        dataType: DataType.JsonObject
+    },
+    {
+        name: 'kfz-zulassungsstelle-lk-vechta-damme',
+        displayName: 'Landkreis Vechta - KFZ-Zulassungsstelle Damme',
+        url: 'https://warten.info/lkvechta-zul-damme/get.php?option=values',
+        dataType: DataType.JsonObject
+    },
+    {
+        name: 'kfz-zulassungsstelle-lk-cuxhaven-cuxhaven',
+        displayName: 'Landkreis Cuxhaven - KFZ-Zulassungsstelle Cuxhaven',
+        url: 'https://warten.info/lk-cuxhaven-zul/get.php?option=values',
         dataType: DataType.JsonObject
     }
 ];
