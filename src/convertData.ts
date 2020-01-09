@@ -12,7 +12,7 @@ export function convertData(measurementName: string, site: Site, siteData: WaitC
         let values = {
             visitorCount: circleData.visitorCount,
             waitTimeSecondsRaw: circleData.waitTimeSeconds,
-            waitTimeSeconds: circleData.visitorCount > 0 ? circleData.waitTimeSeconds : null,
+            waitTimeSeconds: (circleData.visitorCount == 0 || circleData.waitTimeSeconds == null) ? 0 : circleData.waitTimeSeconds,
             nextCallCount: circleData.nextCalls == null ? null : circleData.nextCalls.length
         };
 
