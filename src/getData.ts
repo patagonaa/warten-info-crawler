@@ -49,7 +49,7 @@ export class DataProvider {
                         waitCircleData.push({
                             name: waitCircle,
                             waitTimeSeconds: this.parseWaitTime(waitTimes[waitCircle]),
-                            visitorCount: parseInt(visitors[waitCircle]),
+                            visitorCount: parseInt(visitors[waitCircle] ?? "0"),
                             nextCalls: nextCalls
                         });
                     }
