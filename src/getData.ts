@@ -60,7 +60,7 @@ export class DataProvider {
                     let text = (await data.text()).trim();
                     let dataItems = text.split('----------');
                     if (dataItems.length < 4)
-                        return;
+                        throw `invalid data from server: ${text}`;
 
                     let waitCircles = Object.keys(JSON.parse(dataItems[0]));
                     let waitTimes: { [circle: string]: string } = JSON.parse(dataItems[1]);

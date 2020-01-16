@@ -210,8 +210,12 @@ async function crawlAll() {
     try {
         let lines: string[] = [];
         for (const site of sites) {
-            let siteLines = await crawl(site);
-            lines.push(...siteLines);
+            try {
+                let siteLines = await crawl(site);
+                lines.push(...siteLines);
+            } catch (error) {
+                console.error(`error while crawling ${site.name}:`, error);
+            }
         }
         //console.log(lines);
         await sendValues(lines);
