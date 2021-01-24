@@ -209,6 +209,7 @@ let dataProvider = new DataProvider();
 async function crawlAll() {
     try {
         let lines: string[] = [];
+        let startTime = Date.now();
         for (const site of sites) {
             try {
                 let siteLines = await crawl(site);
@@ -217,8 +218,12 @@ async function crawlAll() {
                 console.error(`error while crawling ${site.name}:`, error);
             }
         }
+        console.info('crawled', sites.length, 'sites in', Math.round(Date.now() - startTime), 'ms');
         //console.log(lines);
+        console.info('sending values to Influx...')
+        startTime = Date.now();
         await sendValues(lines);
+        console.info('sent', lines.length, 'lines in', Math.round(Date.now() - startTime), 'ms');
     } catch (error) {
         console.error(error);
     }
