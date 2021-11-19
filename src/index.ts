@@ -22,12 +22,6 @@ const sites: Site[] = [
         dataType: DataType.JsonObject
     },
     {
-        name: 'buergerbuero-dueren',
-        displayName: 'Bürgerbüro Düren',
-        url: 'https://terminmanagement.regioit-aachen.de/dueren/mobile_markt/get.php?option=values&sid=0',
-        dataType: DataType.JsonObject
-    },
-    {
         name: 'landratsamt-kitzingen',
         displayName: 'Landratsamt Kitzingen',
         url: 'https://warten.info/lra-kitzingen/get.php?option=values',
@@ -37,12 +31,6 @@ const sites: Site[] = [
         name: 'buergerbuero-bottrop',
         displayName: 'Bürgerbüro Bottrop',
         url: 'https://warten.info/stadtbottrop/get.php?option=values',
-        dataType: DataType.MinusSignSeperated
-    },
-    {
-        name: 'kfz-zul-ruesselsheim',
-        displayName: 'KFZ-Zulassungsstelle Rüsselsheim',
-        url: 'https://warten.info/gg-zul-rue/get.php?option=values',
         dataType: DataType.MinusSignSeperated
     },
     {
@@ -74,54 +62,6 @@ const sites: Site[] = [
         displayName: 'Bürgerbüro Schwerin',
         url: 'https://warten.info/schwerin/get.php?option=values',
         dataType: DataType.MinusSignSeperated
-    },
-    {
-        name: 'stva-lk-leer',
-        displayName: 'Straßenverkehrsamt Landkreis Leer',
-        url: 'http://netappoint.lkleer.de/warten/get.php?option=values',
-        dataType: DataType.MinusSignSeperated
-    },
-    {
-        name: 'stva-aachen-fuehrerschein',
-        displayName: 'Straßenverkehrsamt Aachen Fuehrerscheinangelegenheiten',
-        url: 'https://terminmanagement.regioit-aachen.de/sr_aachen/mobile_srac_stva/get.php?option=values&sid=0',
-        dataType: DataType.JsonObject
-    },
-    {
-        name: 'stva-aachen-haendler',
-        displayName: 'Straßenverkehrsamt Aachen Haendlerwartekreis',
-        url: 'https://terminmanagement.regioit-aachen.de/sr_aachen/mobile_srac_stva/get.php?option=values&sid=1',
-        dataType: DataType.JsonObject
-    },
-    {
-        name: 'stva-aachen-schnellschalter',
-        displayName: 'Straßenverkehrsamt Aachen Schnellschalter',
-        url: 'https://terminmanagement.regioit-aachen.de/sr_aachen/mobile_srac_stva/get.php?option=values&sid=2',
-        dataType: DataType.JsonObject
-    },
-    {
-        name: 'stva-aachen-zulassungsangelegenheiten',
-        displayName: 'Straßenverkehrsamt Aachen Zulassungsangelegenheiten',
-        url: 'https://terminmanagement.regioit-aachen.de/sr_aachen/mobile_srac_stva/get.php?option=values&sid=3',
-        dataType: DataType.JsonObject
-    },
-    {
-        name: 'stva-aachen-haendlerwartekreis-klein',
-        displayName: 'Straßenverkehrsamt Aachen Haendlerwartekreis-Klein',
-        url: 'https://terminmanagement.regioit-aachen.de/sr_aachen/mobile_srac_stva/get.php?option=values&sid=4',
-        dataType: DataType.JsonObject
-    },
-    {
-        name: 'buergerservice-aachen-bahnhofplatz',
-        displayName: 'Bürgerservice Aachen Bahnhofplatz',
-        url: 'https://terminmanagement.regioit-aachen.de/aachen/mobile_bahnhofplatz/get.php?option=values',
-        dataType: DataType.MinusSignSeperated
-    },
-    {
-        name: 'buergerbuero-emden',
-        displayName: 'Bürgerbüro Emden',
-        url: 'https://termine.emden.de/wartezeit/get.php?option=values',
-        dataType: DataType.JsonObject
     },
     {
         name: 'stadtverwaltung-huerth',
@@ -157,12 +97,6 @@ const sites: Site[] = [
         name: 'zulassungsstelle-kreis-dithmarschen',
         displayName: 'Zulassungsstelle Kreis Dithmarschen',
         url: 'https://termin-dithmarschen.pbskg.de/warten/get.php?option=values',
-        dataType: DataType.JsonObject
-    },
-    {
-        name: 'buergerbuero-juelich',
-        displayName: 'Bürgerbüro Stadt Jülich',
-        url: 'https://napp.kdvz-frechen.de/module/juelich/wartezeit/get.php?option=values',
         dataType: DataType.JsonObject
     },
     {

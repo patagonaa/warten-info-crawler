@@ -1,5 +1,6 @@
 import { DataType, Site, WaitCircleData } from "./models";
 import fetch from 'node-fetch';
+import { Agent } from 'https';
 
 export class DataProvider {
     public parseWaitTime(waitTime: string): number | null {
@@ -17,7 +18,11 @@ export class DataProvider {
     }
 
     public async getData(site: Site) {
-        let data = await fetch(site.url, { method: 'GET' });
+        const httpsAgent = new Agent({
+            rejectUnauthorized: false
+        });
+
+        let data = await fetch(site.url, { method: 'GET', agent: httpsAgent });
 
         let waitCircleData: WaitCircleData[] = [];
         switch (site.dataType) {
